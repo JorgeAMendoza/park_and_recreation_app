@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ParkAndRecreation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rec_title_homepage">Recreation Centers</string>
+    <string name="fav_center_text">Favorite Recreation Centers</string>
+    <string name="martin_weiss_title">Martin Weiss Recreation Center</string>
+    <string name="kiest_title">Kiest Recreation Center</string>
+    <string name="program_button_text">Programs</string>
+    <string name="fitness_room_button_text">Fitness Room</string>
+    <string name="reservation_room_button_text">Room Reservations</string>
+    <string name="events_button_text">Upcoming Events</string>
+    <string name="gym_button_text">Gymnasium Information</string>
+    <string name="park_button_text">Park Information</string>
+    <string name="item_description">This text will only be displayed in the text view
+    and is beign used to show how far the scroll view and text box will stretch when
+    being filled with text. We need to make that no parts of the text are being left
+    out of the screen. The screen orientation will be locked in portrait mode so yea,
+    im hungry while typing this i need to stop fasting.</string>
+
+   <string name="room_img_desc">This view is used to display multiple images of rooms</string>
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loadFragment">
+
+    <fragment
+        android:id="@+id/loadFragment"
+        android:name="android.example.parkandrecreation.LoadScreen.LoadFragment"
+        android:label="fragment_load"
+        tools:layout="@layout/fragment_load" >
+        <action
+            android:id="@+id/action_loadFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment"
+            app:enterAnim="@anim/slide_up"
+            app:popEnterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="android.example.parkandrecreation.RecScreens.HomePage.HomepageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepageFragment_to_recreationCenterFragment"
+            app:destination="@id/recreationCenterFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/recreationCenterFragment"
+        android:name="android.example.parkandrecreation.RecScreens.RecreationCenterFragment"
+        android:label="fragment_recreation_center"
+        tools:layout="@layout/fragment_recreation_center" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_recreationCenterFragment_to_programFragment"
+            app:destination="@id/programFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_recreationCenterFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_recreationCenterFragment_to_fitnessFragment"
+            app:destination="@id/fitnessFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_recreationCenterFragment_to_gymFragment"
+            app:destination="@id/gymFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_recreationCenterFragment_to_parkFragment"
+            app:destination="@id/parkFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_recreationCenterFragment_to_roomFragment"
+            app:destination="@id/roomFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/programFragment"
+        android:name="android.example.parkandrecreation.RecScreens.ProgramScreens.ProgramFragment"
+        android:label="fragment_program"
+        tools:layout="@layout/fragment_program" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="android.example.parkandrecreation.RecScreens.SpecialEvents.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fitnessFragment"
+        android:name="android.example.parkandrecreation.RecScreens.FitnessRoom.FitnessFragment"
+        android:label="fragment_fitness"
+        tools:layout="@layout/fragment_fitness" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/gymFragment"
+        android:name="android.example.parkandrecreation.RecScreens.Gymnasiums.GymFragment"
+        android:label="fragment_gym"
+        tools:layout="@layout/fragment_gym" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkFragment"
+        android:name="android.example.parkandrecreation.RecScreens.ParkInformation.ParkFragment"
+        android:label="fragment_park"
+        tools:layout="@layout/fragment_park" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="android.example.parkandrecreation.RecScreens.Rooms.RoomFragment"
+        android:label="fragment_rooms"
+        tools:layout="@layout/fragment_rooms" >
+        <argument
+            android:name="recID"
+            app:argType="string" />
+    </fragment>
+</navigation>
